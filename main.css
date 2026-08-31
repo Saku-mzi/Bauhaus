@@ -1,12 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
+::-webkit-scrollbar {
+  display: none;
+}
+main {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: aqua;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
 }
 
 .movingThing {
   display: flex;
-}
-
-img {
-  width: 50%;
 }
