@@ -21,3 +21,13 @@ main {
 .movingThing {
   display: flex;
 }
+
+img {
+  width: 150%;
+  transition: all 0.5s;
+}
+
+img:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
