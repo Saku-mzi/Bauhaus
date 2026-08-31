@@ -1,3 +1,9 @@
 main {
-  color: rgb(0, 0, 255);
+  color: blue;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
 }
