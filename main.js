@@ -1,19 +1,19 @@
-const move = document.querySelector(".movingThing");
+const movingThing = document.querySelector(".movingThing");
 
-const total = move.children.length - 1;
+const total = movingThing.children.length - 1;
 
 let current = 0;
 
-function nextImage() {
+function nextPic() {
   current = current + 1;
 
   if (current > total) {
     current = 0;
   }
 
-  const oneImage = move.clientWidth;
+  const oneImage = movingThing.clientWidth;
 
-  move.scrollLeft = current * oneImage;
+  movingThing.scrollLeft = current * oneImage;
 }
 
-document.querySelector(".container").addEventListener("click", nextImage);
+document.querySelector(".container").addEventListener("click", nextPic);
