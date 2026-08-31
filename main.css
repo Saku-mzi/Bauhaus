@@ -11,21 +11,21 @@ main {
 .container {
   height: 500px;
   width: 500px;
-  background-color: aqua;
   object-fit: contain;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 50% 50%;
   box-shadow: 0 0 5px black;
+  transition: all 0.5s;
 }
 
 .movingThing {
   display: flex;
-  animation: movingThing 30s linear 0.5s infinite;
+  animation: movingThing 100s linear 0s infinite;
 }
 
 @keyframes movingThing {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-650%);
@@ -34,10 +34,9 @@ main {
 
 img {
   width: 150%;
-  transition: all 0.5s;
 }
 
-img:hover {
+.container:hover {
   scale: 1.05;
   cursor: pointer;
 }
