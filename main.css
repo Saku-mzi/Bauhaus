@@ -8,6 +8,15 @@ main {
   align-items: center;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 80px;
+  }
+}
+
 .container {
   height: 500px;
   width: min(500px, 100%);
