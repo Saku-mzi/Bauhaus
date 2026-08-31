@@ -52,4 +52,5 @@ main img {
 
 .container:hover {
   scale: 1.02;
+  filter: saturate(2);
 }
